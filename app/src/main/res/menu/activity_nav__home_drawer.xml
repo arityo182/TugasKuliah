@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_daftar"
+            android:icon="@drawable/pendaftaran"
+            android:title="Pendaftaran" />
+
+        <item
+            android:id="@+id/nav_antre"
+            android:icon="@drawable/nomorantre"
+            android:title="Informasi" />
+        <item
+            android:id="@+id/nav_data_pasien"
+            android:icon="@drawable/anggota"
+            android:title="Pasien" />
+        <item
+            android:id="@+id/nav_riwayat"
+            android:icon="@drawable/riwayatdaftar"
+            android:title="Riwayat" />
+
+    </group>
+
+    <item android:title="Manage">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/exit"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

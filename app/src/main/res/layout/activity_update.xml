@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/layoutdasar"
+    tools:context=".ActivityUpdate">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE DATA PASIEN"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="#121111"/>
+
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageview"
+        android:src="@drawable/add1"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtktp"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Nomor Ktp : "
+            android:textSize="18sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/ktp"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtktp"
+            android:ems="10" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtnama"
+            android:fontFamily="@font/aclonica"
+            android:text="Nama : "
+            android:textSize="18dp"
+            android:layout_below="@id/txtktp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:inputType="textPersonName"
+            android:layout_toRightOf="@id/txtnama"
+            android:ems="10"
+            android:layout_below="@id/ktp" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/txthubungan"
+            android:fontFamily="@font/aclonica"
+            android:text="Hubungan : "
+            android:textSize="18dp"
+            android:layout_below="@id/txtnama"
+            android:gravity="center_vertical"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnr_hubungan"
+            android:layout_toRightOf="@id/txthubungan"
+            android:layout_below="@id/txtnama"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtgoldar"
+            android:fontFamily="@font/aclonica"
+            android:text="Golongan Darah : "
+            android:textSize="18dp"
+            android:layout_below="@id/txthubungan"
+            android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnr_hubungan"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/txtgoldar"
+            android:fontFamily="@font/aclonica"
+            android:text="A"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b"
+            android:text="B"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textSize="18dp"
+            android:layout_below="@id/spnr_hubungan"
+            android:layout_toRightOf="@id/a"
+            android:layout_marginTop="12dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ab"
+            android:text="AB"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textSize="18dp"
+            android:layout_below="@id/spnr_hubungan"
+            android:layout_toRightOf="@id/b"
+            android:layout_marginTop="12dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/o"
+            android:text="O"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
+            android:textSize="18dp"
+            android:layout_below="@id/spnr_hubungan"
+            android:layout_toRightOf="@id/ab"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtgender"
+            android:fontFamily="@font/aclonica"
+            android:text="Jenis Kelamin : "
+            android:textSize="18dp"
+            android:layout_below="@id/ab"
+            android:gravity="center_vertical"/>
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtgender"
+            android:layout_below="@+id/ab">
+
+            <RadioButton
+                android:id="@+id/rb_cowo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki - Laki"
+                android:layout_marginTop="5dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_cewe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txttgllahir"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/rg_gender"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_vertical"
+            android:text="Tanggal Lahir : "
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/tv_dateresult"
+            android:fontFamily="@font/aclonica"
+            android:textSize="18dp"
+            android:layout_below="@id/rg_gender"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/txttgllahir"
+            />
+        <Button
+            android:id="@+id/bt_datepicker"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/rg_gender"
+            android:layout_toRightOf="@id/tv_dateresult"
+            android:text="Pilih Tanggal"
+            android:textSize="8sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/date"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtnohp"
+            android:fontFamily="@font/aclonica"
+            android:text="Nomor HP : "
+            android:textSize="18dp"
+            android:layout_below="@id/tv_dateresult"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nmrhp"
+            android:inputType="phone"
+            android:ems="10"
+            android:layout_below="@id/tv_dateresult"
+            android:layout_toRightOf="@id/txtnohp"/>
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtberatbadan"
+            android:fontFamily="@font/aclonica"
+            android:text="Berat Badan (kg) : "
+            android:textSize="18dp"
+            android:layout_below="@id/nmrhp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beratbadan"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@id/nmrhp"
+            android:layout_toRightOf="@id/txtberatbadan"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtalamt"
+            android:fontFamily="@font/aclonica"
+            android:text="Alamat : "
+            android:textSize="18dp"
+            android:layout_below="@id/txtberatbadan"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alamat"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_below="@id/txtberatbadan"
+            android:layout_toRightOf="@id/txtalamt"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update"
+            android:text="Update"
+            android:layout_below="@+id/alamat"
+            android:background="@drawable/button"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

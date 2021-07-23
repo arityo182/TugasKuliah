@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PSMK Online</string>
+    <string-array name="spnr1">
+        <item>Ayah</item>
+        <item>Ibu</item>
+    </string-array>
+
+    <string-array name="dft_ilkom">
+        <item>Sistem Infromasi</item>
+        <item>Teknologi Infromasi</item>
+        <item>Teknik Infromatika</item>
+    </string-array>
+
+    <string-array name="dftr_bisdi">
+        <item>Bahasa Inggris</item>
+        <item>Bisnis Digital</item>
+        <item>Ilmu Komunikasi</item>
+    </string-array>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Name Profile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="adaptive_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

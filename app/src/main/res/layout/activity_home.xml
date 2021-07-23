@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layouthome"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Selamat Datang di Menu Utama"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRL"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/menu_riwayat"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:background="@drawable/menu_riwayat"
+            />
+
+        <Button
+            android:id="@+id/menu_pendaftaran"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:background="@drawable/menu_daftar"
+            android:layout_toRightOf="@+id/menu_riwayat"
+            />
+
+        <Button
+            android:id="@+id/menu_anggota"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:gravity="right"
+            android:background="@drawable/meu_anggota"
+            android:layout_toRightOf="@+id/menu_pendaftaran"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <Button
+            android:id="@+id/menu_antean"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:background="@drawable/menu_antrian" />
+        <Button
+            android:id="@+id/menu_informasi"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/menu_antean"
+            android:background="@drawable/informasi" />
+
+        <Button
+            android:id="@+id/menu_dftpoli"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:background="@drawable/daftarknilik"
+            android:layout_toRightOf="@id/menu_informasi"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:background="@drawable/keluarbuuton"/>
+    </LinearLayout>
+
+
+</LinearLayout>

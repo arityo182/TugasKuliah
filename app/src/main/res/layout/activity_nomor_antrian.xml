@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutdasar"
+    tools:context=".NomorAntrianActivity">
+
+    <RelativeLayout
+        android:id="@+id/Rl_atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/puskesmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUSKESMAS"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_ruangperiksa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruang Periksa Disini"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_below="@id/puskesmas"/>
+
+        <TextView
+            android:id="@+id/tv_nomorAntrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="80dp"
+            android:layout_below="@id/tv_ruangperiksa"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rl_atas"
+        android:layout_marginBottom="150dp">
+
+
+        <TextView
+            android:id="@+id/tv_Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama : "
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/tv_Penjamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Penjamin : "
+            android:textSize="20dp"
+            android:layout_below="@id/tv_Nama"/>
+        <TextView
+            android:id="@+id/tv_Jnispemeriksa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Jenis Periksa : "
+            android:textSize="20dp"
+            android:layout_below="@id/tv_Penjamin"/>
+        <TextView
+            android:id="@+id/hadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Hadir Pada : "
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_below="@id/tv_Jnispemeriksa"/>
+        <TextView
+            android:id="@+id/tv_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Waktu Periksa : "
+            android:textSize="20dp"
+            android:layout_below="@id/hadir"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terima Kasih"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

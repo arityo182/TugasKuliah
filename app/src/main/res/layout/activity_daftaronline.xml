@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PENDAFTARAN ONLINE"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:textColor="#E91E63"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/namaRL"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nama"
+            android:text="Nama Lengkap"
+            android:textColor="#E91E63"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spin_nama"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/tv_nama"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#171717"/>
+
+        <Button
+            android:id="@+id/bt_tambahdata"
+            android:layout_width="51dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/tv_nama"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/spin_nama"
+            android:background="@drawable/tambahdata"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/tangglRL"
+            android:layout_below="@+id/namaRL"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tanggal"
+                android:text="Tanggal Kontrol"
+                android:textColor="#E91E63"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:id="@+id/tv_tanggal"
+                android:layout_below="@id/tanggal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#171717"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/bt_tanggal"
+                android:layout_width="49dp"
+                android:layout_height="41dp"
+                android:layout_below="@id/tanggal"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/tv_tanggal"
+                android:background="@drawable/date" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/penjaminRL"
+        android:layout_below="@+id/tangglRL"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_penjamin"
+            android:text="Penjamin"
+            android:textColor="#E91E63"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spin_penjamin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/tv_penjamin"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgRL"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_jenispemeriksa"
+            android:text="Jenis Pemeriksaan"
+            android:textColor="#E91E63"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_Periksa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_jenispemeriksa"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_rawat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rawat Jalan" />
+
+            <RadioButton
+                android:id="@+id/rb_laborat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Laboratorium" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bpjsRL"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_bpjs"
+            android:text="Nomor BPJS"
+            android:textColor="#E91E63"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_bpjs"
+            android:layout_below="@id/tv_bpjs"
+            android:inputType="number"
+            android:hint="Masukan Nomor BPJS"/>
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poliRL"
+        android:layout_below="@+id/bpjsRLRL"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_poli"
+            android:text="Poliklinik"
+            android:textColor="#E91E63"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spin_poli"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/tv_poli"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_daftarpoli"
+        android:text="Daftar"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
